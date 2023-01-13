@@ -82,14 +82,14 @@ print("Geometrica", objTest.listPartition[item].arrayBimoG)
 print("Poisson", objTest.listPartition[item].arrayBimoP)
 
 # graficas Bimodals
-plt.plot(x, objTest.listPartition[item].arrayBimoB, '-o', label='Binomial')
+"""plt.plot(x, objTest.listPartition[item].arrayBimoB, '-o', label='Binomial')
 plt.plot(x, objTest.listPartition[item].arrayBimoG, '-', label='Geometrica')
-plt.plot(x, objTest.listPartition[item].arrayBimoP, '-.', label='Poisson')
+plt.plot(x, objTest.listPartition[item].arrayBimoP, '-.', label='Poisson')"""
 
-"""plt.plot(x, objTest.listPartition[2].arrayHourB, label='Binomial')
-plt.plot(x, objTest.listPartition[2].arrayHourG, label='Geometrica')
-plt.plot(x, objTest.listPartition[2].arrayHourP, label='Poisson')"""
-
+# graficas Normales
+plt.plot(x, objTest.listPartition[item].arrayHourB, label='Binomial')
+plt.plot(x, objTest.listPartition[item].arrayHourG, label='Geometrica')
+plt.plot(x, objTest.listPartition[item].arrayHourP, label='Poisson')
 
 
 plt.xlabel('Number of Events', fontsize=12)
